@@ -2,15 +2,20 @@
 
 /**
  *
- *  * main -prints the phrase with proper grammar,
+ * * main-entry point for the program.
  *
- *   * but the outcome is a piece of art,
+ * *
  *
- *    * Return: 0 if exited properly, non-zero otherwise
+ * * Return:0 if no errors, return non zero if errors
  *
- *    */
+ * */
+
 int main(void)
+
 {
-		printf("with proper grammar, but the outcome is a piece of art,\n");
-		return (0);
+
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+
+	return (0);
+
 }
