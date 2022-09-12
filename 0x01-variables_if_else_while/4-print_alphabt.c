@@ -8,14 +8,16 @@
 */
 int main(void)
 {
-char ch;
-for (ch = 'a' ; ch <= 'z' ; ch++)
+char low, e, q;
+
+e = 'e';
+q = 'q';
+
+for(low = 'a'; low <= 'z'; low++)
 {
-if (ch = 'a ' ; ch <=  'z' ; ch++)
-{
-	putchar(ch);
-}
+	if (low != && low != q)
+		putchar(low);
 }
 putchar('\n');
-return (0);
+return(0);
 }
