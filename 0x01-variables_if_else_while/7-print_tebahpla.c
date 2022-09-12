@@ -9,8 +9,8 @@
  *	Return: Always 0 (Success)
  */
 
-int main(void){
-
+int main(void)
+{
 	char letter;
 
 	for (letter = 'z'; letter >= 'a'; letter--)
@@ -19,5 +19,4 @@ int main(void){
 	putchar('\n');
 	
 	return (0);
-
 }
