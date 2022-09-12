@@ -4,10 +4,10 @@
 
 /**
 *
-* main -print if number is positive, zero, or negative
-* Description : using the main function
-* this program prints "Programming is postitve, zero, or negative
-* Return 0
+* main - Entry point
+* 
+*
+* Return: Aways 0 (success)
 */
 
 int main(void)
