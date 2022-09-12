@@ -9,12 +9,18 @@
  *	Return: Always 0 (Success)
  */
 
-int main(void){
+int main(void)
+{
+	char low, e, q;
 
-	int i;
+	e = 'e' ;
+	q = 'q' ;
 
-	for (i = 0; i < 10; i++)
-		printf("%d", i);
+	for (low = 'a' ; low <= 'z' ; low++)
+	{
+			if (low != e && != q)
+					putchar(low);
+	}
 	printf("\n");
 
 	return (0);
