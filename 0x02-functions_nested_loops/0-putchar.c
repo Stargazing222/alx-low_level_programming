@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Main Entry
+ * main - Entry point
  *
- * Retirn: Always Success
+ * Return: Always success
  */
 int main(void)
 {
