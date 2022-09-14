@@ -1,30 +1,15 @@
 #include "main.h"
 /**
- * jack_bauer - prints every minute of the day of Jack Bauer
+ * add - adds two integrers and returns the result
  *
- * starting from 00:00 to 23:59
+ * @x: number being added
+ *
+ * @y: number being added
+ *
+ * Return: Always 0.
  *
  */
-void jack_bauer(void)
+int add(int x, int y)
 {
-	int i, j;
-
-	i = 0;
-
-	while (i < 24)
-	{
-		j = 0;
-
-		while (j < 60)
-		{
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-			_putchar(':');
-			_putchar((j / 10) + '0');
-			_putchar((j % 10) + '0');
-			_putchar('\n')
-			j++;
-		}
-		i++;
-	}
+	return (x + y);
 }
