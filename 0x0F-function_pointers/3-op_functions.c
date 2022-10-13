@@ -1,35 +1,54 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "3-calc.h"
+/**
+* op_add - a function that adds two ints
+* @a: int one
+* @b: int two
+* Return: returns the sum of a and b
+*/
+int op_add(int a, int b)
+{
+	return (a + b);
+}
 
 /**
-* get_op_func - a function that selects the right function to perform
-* the required operation
-* @s: the operator passed in form of string
-* Return: returns a pointer to the right function
+* op_sub - a function that subtracts two ints
+* @a: int one
+* @b: int two
+* Return: returns the difference of a and b
 */
-int (*get_op_func(char *s))(int, int)
+int op_sub(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i;
+	return (a - b);
+}
 
-	i = 0;
-	while (i < 5 && s != NULL)
-	{
-		if (s[0] == *(ops[i].op))
-		{
-			return (ops[i].f);
-		}
-		i++;
-	}
+/**
+* op_mul - a function that multiplies two ints
+* @a: int one
+* @b: int two
+* Return: returns the product of a and b
+*/
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
 
-	return (NULL);
+/**
+* op_div - a function that divides two ints
+* @a: int one
+* @b: int two
+* Return: returns the result of the division of a by b
+*/
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+
+/**
+* op_mod - a function that gets the remainder of the division of two ints
+* @a: int one
+* @b: int two
+* Return: returns the remainder of the division of a by b
+*/
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
