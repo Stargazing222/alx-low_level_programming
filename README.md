@@ -1,1 +1,1 @@
-0x17. C - Doubly linked lists
+0x18-dynamic_libraries
